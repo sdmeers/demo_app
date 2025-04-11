@@ -3,64 +3,64 @@
       "id": "yolo_v12",
       "name": "Computer vision: YOLO v12",
       "description": "Runs the YOLO v12 object detection batch script.",
-      "image": "./images/yolo.jpg", 
+      "image": "./images/yolo.jpg",
       "launch_type": "script",
-      "command": "cmd.exe /C \"C:\\Users\\steve\\OneDrive\\Steve\\Code\\bin\\yolov12.bat\""
+      "command": "cd /mnt/c/Users/steve/ && cmd.exe /C \"OneDrive\\Steve\\Code\\bin\\yolov12.bat\""
     },
     {
       "id": "chatgpt",
       "name": "ChatGPT",
       "description": "Opens the ChatGPT website.",
       "image": "./images/chatgpt.png",
-      "launch_type": "url",
-      "command": "https://chatgpt.com/"
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://chatgpt.com/\""
     },
     {
       "id": "gemini",
       "name": "Gemini",
       "description": "Opens the Google Gemini website.",
       "image": "./images/gemini.png",
-      "launch_type": "url",
-      "command": "https://gemini.google.com/app?hl=en"
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://gemini.google.com/app?hl=en\""
     },
     {
       "id": "claude",
       "name": "Claude",
       "description": "Opens the Claude AI website.",
       "image": "./images/claude.png",
-      "launch_type": "url",
-      "command": "https://claude.ai/new"
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://claude.ai/new\""
     },
     {
       "id": "rl_hide_seek",
-      "name": "Reinforcement Learning: Hide & Seek",
+      "name": "Reinforcement Learning",
       "description": "Plays the Hide & Seek RL video.",
       "image": "./images/hide+seek.jpg",
       "launch_type": "video",
-      "command": "\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Documents\\Work\\Videos\\hide+seek_1080p.mp4\""
+      "command": "/mnt/c/Program\\ Files/VideoLAN/VLC/vlc.exe --video-on-top --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Documents\\Work\\Videos\\hide+seek_1080p.mp4\""
     },
     {
       "id": "rl_lunar_lander",
-      "name": "Reinforcement Learning: Lunar Lander Agent",
+      "name": "Lunar Lander Agent",
       "description": "Plays the Lunar Lander RL video.",
       "image": "./images/lunarlander.png",
       "launch_type": "video",
-      "command": "\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Code\\deep_rl_zoo\\recordings\\Lunar_Lander_DeepRL_DQN_2.mp4\""
+      "command": "/mnt/c/Program\\ Files/VideoLAN/VLC/vlc.exe --video-on-top --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Code\\deep_rl_zoo\\recordings\\Lunar_Lander_DeepRL_DQN_2.mp4\""
     },
     {
       "id": "rl_breakout",
-      "name": "Reinforcement Learning: Breakout Agent",
+      "name": "Breakout Agent",
       "description": "Plays the Breakout RL video.",
       "image": "./images/breakout.png",
       "launch_type": "video",
-      "command": "\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Code\\deep_rl_zoo\\recordings\\Breakout_DeepRL_DQN_33.mp4\""
+      "command": "/mnt/c/Program\\ Files/VideoLAN/VLC/vlc.exe --video-on-top --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Code\\deep_rl_zoo\\recordings\\Breakout_DeepRL_DQN_33.mp4\""
     },
     {
       "id": "rl_space_invaders",
-      "name": "Reinforcement Learning: Space Invaders Agent",
+      "name": "Space Invaders Agent",
       "description": "Plays the Space Invaders RL video.",
       "image": "./images/spaceinvaders.png",
       "launch_type": "video",
-      "command": "\"C:\\Program Files\\VideoLAN\\VLC\\vlc.exe\" --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Code\\deep_rl_zoo\\recordings\\SpaceInvaders_DeepRL_IQN_84.mp4\""
+      "command": "/mnt/c/Program\\ Files/VideoLAN/VLC/vlc.exe --video-on-top --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Code\\deep_rl_zoo\\recordings\\SpaceInvaders_DeepRL_IQN_84.mp4\""
     }
   ]
