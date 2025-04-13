@@ -1,19 +1,23 @@
 // src/main.ts
-import { app, BrowserWindow, ipcMain } from 'electron'; // Removed shell
+import { app, BrowserWindow, ipcMain, Menu } from 'electron'; // Import Menu
 import path from 'path';
 import fs from 'fs/promises';
 import { spawn } from 'child_process';
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
-if (require('electron-squirrel-startup')) {
-  app.quit();
-}
+// if (require('electron-squirrel-startup')) {
+//   app.quit();
+// }
 
 // Define path to demos.json
+// const isDev = !app.isPackaged;
+// const demosFilePath = isDev
+//   ? path.join(app.getAppPath(), 'demos.json')
+//   : path.join(process.resourcesPath, 'app', 'demos.json'); // Ensure build copies this
 const isDev = !app.isPackaged;
 const demosFilePath = isDev
-  ? path.join(app.getAppPath(), 'demos.json')
-  : path.join(process.resourcesPath, 'app', 'demos.json'); // Ensure build copies this
+  ? path.join(app.getAppPath(), 'demos.json') // Path in development (usually project root)
+  : path.join(process.resourcesPath, 'demos.json'); // Assume it's directly in resources path
 
 // Function to load demos
 async function loadDemosFromFile() {
@@ -28,6 +32,7 @@ async function loadDemosFromFile() {
 }
 
 const createWindow = () => {
+  // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 1000,
     height: 800,
@@ -38,13 +43,22 @@ const createWindow = () => {
     },
   });
 
+  // --- Remove the menu bar ---
+  mainWindow.setMenu(null);
+  // --- End Remove Menu Bar ---
+
+
+  // Load the index.html of the app.
   if (MAIN_WINDOW_VITE_DEV_SERVER_URL) {
     mainWindow.loadURL(MAIN_WINDOW_VITE_DEV_SERVER_URL);
+    // Open the DevTools in development.
     mainWindow.webContents.openDevTools();
   } else {
     mainWindow.loadFile(path.join(__dirname, `../renderer/${MAIN_WINDOW_VITE_NAME}/index.html`));
   }
 };
+
+// (Keep the rest of the file the same - app.whenReady(), IPC handlers, etc.)
 
 app.whenReady().then(() => {
   // Set up IPC handlers
@@ -62,7 +76,6 @@ app.whenReady().then(() => {
       return { status: 'error', message: 'Demo ID not found' };
     }
 
-    // Treat all launch types except 'unknown' as commands to be spawned
     const launchType = demoToLaunch.launch_type || 'unknown';
     const command = demoToLaunch.command;
     const name = demoToLaunch.name || demoId;
@@ -84,7 +97,7 @@ app.whenReady().then(() => {
       // Use spawn for scripts, videos, docker, and now URLs (via direct browser call)
       const spawnOptions: any = {
         stdio: 'inherit', // Show output/errors in terminal
-        shell: true // Use shell to handle complex commands like 'cd ... && ...' and paths with spaces
+        shell: true // Use shell to handle complex commands
       };
 
       console.log(`IPC: Spawning command with options:`, spawnOptions);
@@ -99,7 +112,6 @@ app.whenReady().then(() => {
       });
 
       console.log(`IPC: Spawn command initiated for ${demoId} (${name})`);
-      // Return success as the spawn call itself didn't throw a synchronous error
       return { status: 'success', message: `Launch command initiated via spawn for ${demoId}` };
 
     } catch (error) {
