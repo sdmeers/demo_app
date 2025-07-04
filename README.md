@@ -35,8 +35,8 @@ You need to have [Node.js](https://nodejs.org/) and npm installed on your system
 
 1.  Clone the repository:
     ```sh
-    git clone https://github.com/your-username/your-repository-name.git
-    cd your-repository-name
+    git clone https://github.com/sdmeers/demo_app
+    cd demo_app
     ```
 2.  Install the dependencies:
     ```sh
