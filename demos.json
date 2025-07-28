@@ -5,31 +5,17 @@
       "description": "Runs the YOLO v12 object detection batch script.",
       "image": "./images/yolo.jpg",
       "launch_type": "script",
-      "command": "cd /mnt/c/Users/steve/ && cmd.exe /C \"OneDrive\\Steve\\Code\\bin\\yolov12.bat\""
+      "command": "cd /mnt/c/Users/steve/ && cmd.exe /C \"OneDrive\\Steve\\Code\\bin\\yolov12.bat\"",
+      "theme": "Machine Vision"
     },
     {
-      "id": "chatgpt",
-      "name": "ChatGPT",
-      "description": "Opens the ChatGPT website.",
-      "image": "./images/chatgpt.png",
+      "id": "ascii_webcam",
+      "name": "ASCII Webcam",
+      "description": "Fun app to view webcam feed as ASCII.",
+      "image": "./images/ascii_webcam.png",
       "launch_type": "script",
-      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://chatgpt.com/\""
-    },
-    {
-      "id": "gemini",
-      "name": "Gemini",
-      "description": "Opens the Google Gemini website.",
-      "image": "./images/gemini.png",
-      "launch_type": "script",
-      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://gemini.google.com/app?hl=en\""
-    },
-    {
-      "id": "claude",
-      "name": "Claude",
-      "description": "Opens the Claude AI website.",
-      "image": "./images/claude.png",
-      "launch_type": "script",
-      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://claude.ai/new\""
+      "command": "cd /mnt/c/Users/steve/ && cmd.exe /C \"OneDrive\\Steve\\Code\\bin\\ascii_webcam.bat\"",
+      "theme": "Machine Vision"
     },
     {
       "id": "rl_hide_seek",
@@ -37,7 +23,8 @@
       "description": "Plays the Hide & Seek RL video.",
       "image": "./images/hide+seek.jpg",
       "launch_type": "video",
-      "command": "/mnt/c/Program\\ Files/VideoLAN/VLC/vlc.exe --video-on-top --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Documents\\Work\\Videos\\hide+seek_1080p.mp4\""
+      "command": "/mnt/c/Program\\ Files/VideoLAN/VLC/vlc.exe --video-on-top --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Documents\\Work\\Videos\\hide+seek_1080p.mp4\"",
+      "theme": "Reinforcement Learning"
     },
     {
       "id": "rl_lunar_lander",
@@ -45,7 +32,8 @@
       "description": "Plays the Lunar Lander RL video.",
       "image": "./images/lunarlander.png",
       "launch_type": "video",
-      "command": "/mnt/c/Program\\ Files/VideoLAN/VLC/vlc.exe --video-on-top --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Code\\deep_rl_zoo\\recordings\\Lunar_Lander_DeepRL_DQN_2.mp4\""
+      "command": "/mnt/c/Program\\ Files/VideoLAN/VLC/vlc.exe --video-on-top --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Code\\deep_rl_zoo\\recordings\\Lunar_Lander_DeepRL_DQN_2.mp4\"",
+      "theme": "Reinforcement Learning"
     },
     {
       "id": "rl_breakout",
@@ -53,7 +41,8 @@
       "description": "Plays the Breakout RL video.",
       "image": "./images/breakout.png",
       "launch_type": "video",
-      "command": "/mnt/c/Program\\ Files/VideoLAN/VLC/vlc.exe --video-on-top --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Code\\deep_rl_zoo\\recordings\\Breakout_DeepRL_DQN_33.mp4\""
+      "command": "/mnt/c/Program\\ Files/VideoLAN/VLC/vlc.exe --video-on-top --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Code\\deep_rl_zoo\\recordings\\Breakout_DeepRL_DQN_33.mp4\"",
+      "theme": "Reinforcement Learning"
     },
     {
       "id": "rl_space_invaders",
@@ -61,6 +50,7 @@
       "description": "Plays the Space Invaders RL video.",
       "image": "./images/spaceinvaders.png",
       "launch_type": "video",
-      "command": "/mnt/c/Program\\ Files/VideoLAN/VLC/vlc.exe --video-on-top --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Code\\deep_rl_zoo\\recordings\\SpaceInvaders_DeepRL_IQN_84.mp4\""
+      "command": "/mnt/c/Program\\ Files/VideoLAN/VLC/vlc.exe --video-on-top --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Code\\deep_rl_zoo\\recordings\\SpaceInvaders_DeepRL_IQN_84.mp4\"",
+      "theme": "Reinforcement Learning"
     }
   ]

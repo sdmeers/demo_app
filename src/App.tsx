@@ -82,6 +82,16 @@ function App() {
     }
   };
 
+  // Group demos by theme
+  const groupedDemos = demos.reduce((acc, demo) => {
+    const theme = demo.theme || 'Uncategorized'; // Default to 'Uncategorized' if no theme is provided
+    if (!acc[theme]) {
+      acc[theme] = [];
+    }
+    acc[theme].push(demo);
+    return acc;
+  }, {});
+
   // (Keep rendering logic as before)
   if (loading) {
     return <div className="app-container">Loading demos...</div>;
@@ -94,16 +104,22 @@ function App() {
   return (
     <div className="app-container">
       <h1>AI Project Demonstrations</h1>
-      <div className="demo-grid">
-        {demos.length > 0 ? (
-          demos.map(demo => (
-            <DemoCard key={demo.id} demo={demo} onLaunch={handleLaunchDemo} />
+      {
+        Object.keys(groupedDemos).length > 0 ? (
+          Object.keys(groupedDemos).sort().map(theme => (
+            <div key={theme} className="theme-section">
+              <h2>{theme}</h2>
+              <div className="demo-grid">
+                {groupedDemos[theme].map(demo => (
+                  <DemoCard key={demo.id} demo={demo} onLaunch={handleLaunchDemo} />
+                ))}
+              </div>
+            </div>
           ))
         ) : (
-          // Display message if loading is finished but demos array is empty
           !loading && <p>No demos loaded. Check console logs (in DevTools) and main process output.</p>
-        )}
-      </div>
+        )
+      }
     </div>
   );
 }

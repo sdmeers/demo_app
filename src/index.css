@@ -18,6 +18,19 @@ h1 {
   margin-bottom: 30px;
 }
 
+.theme-section {
+  margin-bottom: 40px; /* Space between different theme sections */
+}
+
+.theme-section h2 {
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
 .demo-grid {
   display: grid;
   /* Create 4 equal columns */
