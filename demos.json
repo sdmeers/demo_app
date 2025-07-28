@@ -9,6 +9,24 @@
       "theme": "Large Language Models"
     },
     {
+      "id": "weathercloud_chatbot",
+      "name": "Weather  Chatbot",
+      "description": "Opens my Weather Station Chatbot running on GCP to answer natural language questions about my weather data.",
+      "image": "./images/weather_chatbot.png",
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://weather-chat-728445650450.europe-west2.run.app/\"",
+      "theme": "Large Language Models"
+    },
+    {
+      "id": "gemini_cli",
+      "name": "Gemini CLI",
+      "description": "Launches the Gemini CLI in a new terminal session.",
+      "image": "./images/gemini_CLI.png",
+      "launch_type": "script",
+      "command": "cmd.exe /c start powershell.exe -NoExit -Command gemini",
+      "theme": "Large Language Models"
+    },
+    {
       "id": "chatgpt",
       "name": "ChatGPT",
       "description": "Opens the ChatGPT website to experiment with Agent Mode, Deep Research, SORA and more.",
@@ -46,11 +64,20 @@
     },
     {
       "id": "yolo_v12",
-      "name": "Computer vision: YOLO v12",
+      "name": "YOLO version 12",
       "description": "Runs the YOLO v12 object detection batch script.",
       "image": "./images/yolo.jpg",
       "launch_type": "script",
       "command": "cd /mnt/c/Users/steve/ && cmd.exe /C \"OneDrive\\Steve\\Code\\bin\\yolov12.bat\"",
+      "theme": "Machine Vision"
+    },
+    {
+      "id": "weather_image_classifier",
+      "name": "Weather Image Classifier",
+      "description": "Opens my Weather Image Classifier running on GCP to classify images of weather e.g. sunny, cloudy etc...",
+      "image": "./images/weather_image_classifier.png",
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://europe-west1-weathercloud-460719.cloudfunctions.net/weather-image-classifier\"",
       "theme": "Machine Vision"
     },
     {
@@ -97,5 +124,41 @@
       "launch_type": "video",
       "command": "/mnt/c/Program\\ Files/VideoLAN/VLC/vlc.exe --video-on-top --fullscreen \"C:\\Users\\steve\\OneDrive\\Steve\\Code\\deep_rl_zoo\\recordings\\SpaceInvaders_DeepRL_IQN_84.mp4\"",
       "theme": "Reinforcement Learning"
+    },
+    {
+      "id": "crime_dashboard",
+      "name": "Crime Dashboard",
+      "description": "Crime Dashboard for Hampshire, UK using data.police.uk API",
+      "image": "./images/crime_dashboard.jpg",
+      "launch_type": "script",
+      "command": "bash -c \"cd /home/sdmeers/Code/crime_data/ && python3 -m http.server 8000 & /mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"http://localhost:8000/hampshire_crime_dashboard.html\"\"",
+      "theme": "Data Science"
+    },
+    {
+      "id": "weathercloud_summary",
+      "name": "Weather Summary",
+      "description": "Opens my Weather Station Summary Dashboard running on GCP.",
+      "image": "./images/weather_summary.png",
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://weather-dashboard-728445650450.europe-west2.run.app/\"",
+      "theme": "Data Science"
+    },
+    {
+      "id": "weathercloud_interactive",
+      "name": "Weather Dashboard",
+      "description": "Opens my Weather Station Interactive Dashboard running on GCP.",
+      "image": "./images/weather_dashboard.png",
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://interactive-dashboard-728445650450.europe-west2.run.app/\"",
+      "theme": "Data Science"
+    },
+    {
+      "id": "weathercloud_data",
+      "name": "Weather Data",
+      "description": "Enables examination of the raw data stored by my weatherstation help in a Firestore on GCP.",
+      "image": "./images/weather_data.jpg",
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://display-weather-data-728445650450.europe-west2.run.app/\"",
+      "theme": "Data Science"
     }
   ]
