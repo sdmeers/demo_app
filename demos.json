@@ -1,5 +1,50 @@
 [
     {
+      "id": "openwebui",
+      "name": "Open Web UI",
+      "description": "Local LLMs running on Open Web UI and Ollama. Downloaded models include Gemma3, Llama3.1, DeepSeek R1 and ",
+      "image": "./images/openwebui.png",
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"http://localhost:8080/\"",
+      "theme": "Large Language Models"
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "description": "Opens the ChatGPT website to experiment with Agent Mode, Deep Research, SORA and more.",
+      "image": "./images/chatgpt.png",
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://chatgpt.com/\"",
+      "theme": "Large Language Models"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "description": "Opens the Google Gemini website to experiment with Canvas, Deep Research, Imagen and more.",
+      "image": "./images/gemini.png",
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://gemini.google.com/app?hl=en\"",
+      "theme": "Large Language Models"
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "description": "Opens the Claude AI website to experiment with Artifacts and more.",
+      "image": "./images/claude.png",
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://claude.ai/new\"",
+      "theme": "Large Language Models"
+    },
+        {
+      "id": "notebookLM",
+      "name": "NotebookLM",
+      "description": "Opens the NotebookLM website to experiment with podcast generation and more.",
+      "image": "./images/notebookLM.jpg",
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://notebooklm.google.com/?_gl=1*1vwv2d8*_ga*MzMwODQzMDc4LjE3NTM3MzU5MzM.*_ga_W0LDH41ZCB*czE3NTM3MzU5MzMkbzEkZzAkdDE3NTM3MzU5MzMkajYwJGwwJGgw\"",
+      "theme": "Large Language Models"
+    },
+    {
       "id": "yolo_v12",
       "name": "Computer vision: YOLO v12",
       "description": "Runs the YOLO v12 object detection batch script.",
