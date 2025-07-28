@@ -73,11 +73,20 @@
     },
     {
       "id": "weather_image_classifier",
-      "name": "Weather Image Classifier",
-      "description": "Opens my Weather Image Classifier running on GCP to classify images of weather e.g. sunny, cloudy etc...",
+      "name": "Weather Classifier (Cloud)",
+      "description": "Opens my Weather Image Classifier running on GCP (Gemini Flash 2.0) to classify images of weather e.g. sunny, cloudy etc...",
       "image": "./images/weather_image_classifier.png",
       "launch_type": "script",
       "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://europe-west1-weathercloud-460719.cloudfunctions.net/weather-image-classifier\"",
+      "theme": "Machine Vision"
+    },
+  {
+      "id": "local_weather_classifier",
+      "name": "Weather Classifier (local)",
+      "description": "Opens my Weather Image Classifier running  locally (Gemma 3) to classify images of weather e.g. sunny, cloudy etc...",
+      "image": "./images/local_weather_classifier.png",
+      "launch_type": "script",
+      "command": "bash -c \"cd /home/sdmeers/Code/weathervision/ && conda run -n weathervision python gui.py\"",
       "theme": "Machine Vision"
     },
     {
