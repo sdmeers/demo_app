@@ -42,7 +42,7 @@
       "image": "./images/gemini_CLI.png",
       "launch_type": "script",
       "command": "cmd.exe /c start powershell.exe -NoExit -Command gemini",
-      "theme": "Frontier Models"
+      "theme": "Generative & Agentic AI"
     },
     {
       "id": "chatgpt",
@@ -81,6 +81,33 @@
       "theme": "Frontier Models"
     },
     {
+      "id": "stable_diffusion",
+      "name": "Stable Diffusion",
+      "description": "Opens a website to allow generation of images using Stable Diffusion models.",
+      "image": "./images/stable_diffusion.png",
+      "launch_type": "script",
+      "command": "cd /mnt/c/Users/steve/ && cmd.exe /C \"OneDrive\\Steve\\Code\\stable-diffusion-webui\\webui-user.bat\"",
+      "theme": "Generative & Agentic AI"
+    },
+    {
+      "id": "sora",
+      "name": "Sora",
+      "description": "Opens the SORA website to experiment with video generation.",
+      "image": "./images/sora.png",
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://sora.chatgpt.com/explore\"",
+      "theme": "Generative & Agentic AI"
+    },
+    {
+      "id": "veo3",
+      "name": "VEO3",
+      "description": "Opens the VEO3 website to experiment with video generation.",
+      "image": "./images/veo3.png",
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://console.cloud.google.com/vertex-ai/studio/media/generate;tab=video?inv=1&invt=Ab4Knw&orgonly=true&project=weathercloud-460719&supportedpurview=project\"",
+      "theme": "Generative & Agentic AI"
+    },
+    {
       "id": "yolo_v12",
       "name": "YOLO version 12",
       "description": "Runs the YOLO v12 object detection batch script.",
@@ -113,7 +140,7 @@
       "description": "Fun app to view webcam feed as ASCII.",
       "image": "./images/ascii_webcam.png",
       "launch_type": "script",
-      "command": "cd /mnt/c/Users/steve/ && cmd.exe /C \"OneDrive\\Steve\\Code\\bin\\ascii_webcam.bat\"",
+      "command": "wt.exe cmd.exe /C \"cd /D C:\\Users\\steve\\OneDrive\\Steve\\Code\\bin && ascii_webcam.bat\"",
       "theme": "Machine Vision"
     },
     {

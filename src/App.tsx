@@ -103,7 +103,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>AI Project Demonstrations</h1>
+      <h1>Project Demonstrations</h1>
       {
         Object.keys(groupedDemos).length > 0 ? (
           Object.keys(groupedDemos).sort().map(theme => (
