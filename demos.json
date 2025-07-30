@@ -17,7 +17,16 @@
       "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://weather-chat-728445650450.europe-west2.run.app/\"",
       "theme": "Large Language Models"
     },
-  {
+    {
+      "id": "nanoGPT",
+      "name": "Shakespearean LLM",
+      "description": "A NanoGPT trained on the complete works of Shakespeare. Try prompting it with some Shakespearean language.",
+      "image": "./images/shakespeare_LLM.png",
+      "launch_type": "script",
+      "command": "wt.exe -- wsl.exe /home/sdmeers/Code/nanoGPT/launch_interact.sh",
+      "theme": "Large Language Models"
+    },
+    {
       "id": "MetO_mcp",
       "name": "Met Office MCP Server",
       "description": "An MCP server to allow a LLM to access the Met Office. Try asking Gemini for the weather in a UK town.",
@@ -33,7 +42,7 @@
       "image": "./images/gemini_CLI.png",
       "launch_type": "script",
       "command": "cmd.exe /c start powershell.exe -NoExit -Command gemini",
-      "theme": "Large Language Models"
+      "theme": "Frontier Models"
     },
     {
       "id": "chatgpt",
@@ -42,7 +51,7 @@
       "image": "./images/chatgpt.png",
       "launch_type": "script",
       "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://chatgpt.com/\"",
-      "theme": "Large Language Models"
+      "theme": "Frontier Models"
     },
     {
       "id": "gemini",
@@ -51,7 +60,7 @@
       "image": "./images/gemini.png",
       "launch_type": "script",
       "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://gemini.google.com/app?hl=en\"",
-      "theme": "Large Language Models"
+      "theme": "Frontier Models"
     },
     {
       "id": "claude",
@@ -60,7 +69,7 @@
       "image": "./images/claude.png",
       "launch_type": "script",
       "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://claude.ai/new\"",
-      "theme": "Large Language Models"
+      "theme": "Frontier Models"
     },
         {
       "id": "notebookLM",
@@ -69,7 +78,7 @@
       "image": "./images/notebookLM.jpg",
       "launch_type": "script",
       "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://notebooklm.google.com/?_gl=1*1vwv2d8*_ga*MzMwODQzMDc4LjE3NTM3MzU5MzM.*_ga_W0LDH41ZCB*czE3NTM3MzU5MzMkbzEkZzAkdDE3NTM3MzU5MzMkajYwJGwwJGgw\"",
-      "theme": "Large Language Models"
+      "theme": "Frontier Models"
     },
     {
       "id": "yolo_v12",
