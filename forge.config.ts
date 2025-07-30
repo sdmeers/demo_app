@@ -18,7 +18,7 @@ const config: ForgeConfig = {
   rebuildConfig: {},
   makers: [
     // Keep only MakerZIP and target win32
-    new MakerZIP({}, ['win32']),
+    new MakerZIP({}, ['win32', 'linux']),
     // Remove or comment out other makers:
     // new MakerSquirrel({}),
     // new MakerRpm({}),
