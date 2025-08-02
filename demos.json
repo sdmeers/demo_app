@@ -86,7 +86,7 @@
       "description": "Opens a website to allow generation of images using Stable Diffusion models.",
       "image": "./images/stable_diffusion.png",
       "launch_type": "script",
-      "command": "cd /mnt/c/Users/steve/ && cmd.exe /C \"OneDrive\\Steve\\Code\\stable-diffusion-webui\\webui-user.bat\"",
+      "command": "cd \"/mnt/c/Program Files/stable-diffusion-webui/\" && cmd.exe /C webui-user.bat",
       "theme": "Generative & Agentic AI"
     },
     {
