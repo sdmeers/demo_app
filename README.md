@@ -2,7 +2,7 @@
 
 This is an Electron application designed to launch and showcase a variety of project demos. It provides a simple and organized interface for running different scripts, opening web pages, and playing video demonstrations.
 
-![App Screenshot](screenshots/app_screenshot.jpg)
+![App Screenshot](images/screenshot.png)
 
 ## Features
 
