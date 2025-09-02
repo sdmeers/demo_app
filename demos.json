@@ -214,5 +214,32 @@
       "launch_type": "script",
       "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://display-weather-data-728445650450.europe-west2.run.app/\"",
       "theme": "Data Science"
+    },
+    {
+      "id": "AI_tetris",
+      "name": "AI Tetris",
+      "description": "A game of tetris written in python by an AI coding assistant.",
+      "image": "./images/tetris.png",
+      "launch_type": "script",
+      "command": "wt.exe -- wsl.exe /home/sdmeers/Code/tetris/launch_tetris.sh",
+      "theme": "Generative & Agentic AI"
+    },
+    {
+      "id": "radio_mcp",
+      "name": "Radio Player MCP Server",
+      "description": "An MCP server that lets your LLM search, resolve, and play internet radio stations using the Radio Browser open API.",
+      "image": "./images/RadioBrowser_logo.png",
+      "launch_type": "script",
+      "command": "cmd.exe /c start powershell.exe -NoExit -Command gemini",
+      "theme": "Large Language Models"
+    },
+    {
+      "id": "lofar",
+      "name": "LOFARGram",
+      "description": "A Low Frequency Analyzer and Recorder presenting a Time/Frequency plot of audio data from the laptop microphone.",
+      "image": "./images/lofar.png",
+      "launch_type": "script",
+      "command": "wt.exe cmd.exe /C \"cd /D C:\\Users\\steve\\OneDrive\\Steve\\Code\\bin && lofar.bat\"",
+      "theme": "Data Science"
     }
   ]
