@@ -4,6 +4,11 @@ import path from 'path';
 import fs from 'fs/promises';
 import { spawn } from 'child_process';
 
+// Disable hardware acceleration to fix rendering issues on some systems
+app.disableHardwareAcceleration();
+
+
+
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 // if (require('electron-squirrel-startup')) {
 //   app.quit();
