@@ -2,7 +2,7 @@
     {
       "id": "openwebui",
       "name": "Open Web UI",
-      "description": "Local LLMs running on Open Web UI and Ollama. Downloaded models include Gemma3, Llama3.1, DeepSeek R1 and ",
+      "description": "Local LLMs running on Open Web UI and Ollama. Downloaded models include Gemma3, Llama3.1, and DeepSeek R1. ",
       "image": "./images/openwebui.png",
       "launch_type": "script",
       "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"http://localhost:8080/\"",
@@ -20,19 +20,19 @@
     {
       "id": "nanoGPT",
       "name": "Shakespearean LLM",
-      "description": "A NanoGPT trained on the complete works of Shakespeare. Try prompting it with some Shakespearean language.",
+      "description": "A NanoGPT trained on the complete works of Shakespeare.",
       "image": "./images/shakespeare_LLM.png",
       "launch_type": "script",
       "command": "wt.exe -- wsl.exe /home/sdmeers/Code/nanoGPT/launch_interact.sh",
       "theme": "Large Language Models"
     },
-    {
-      "id": "MetO_mcp",
-      "name": "Met Office MCP Server",
-      "description": "An MCP server to allow a LLM to access the Met Office. Try asking Gemini for the weather in a UK town.",
-      "image": "./images/MO_mcp.jpg",
+  {
+      "id": "holmesGPT",
+      "name": "Sherlock Holmes LLM",
+      "description": "A NanoGPT trained on the complete works of Sherlock Holmes.",
+      "image": "./images/holmes_llm.png",
       "launch_type": "script",
-      "command": "",
+      "command": "wt.exe -- wsl.exe /home/sdmeers/Code/nanoGPT/launch_holmes_interact.sh",
       "theme": "Large Language Models"
     },
     {
@@ -42,6 +42,15 @@
       "image": "./images/ai_transcriber.png",
       "launch_type": "script",
       "command": "wt.exe -- wsl.exe bash -c \"cd /home/sdmeers/Code/ai_transcriber && ./ai_transcriber.sh\"",
+      "theme": "Large Language Models"
+    },
+    {
+      "id": "MetO_mcp",
+      "name": "Met Office MCP Server",
+      "description": "An MCP server to allow a LLM to access the Met Office. Try asking Gemini for the weather in a UK town.",
+      "image": "./images/MO_mcp.jpg",
+      "launch_type": "script",
+      "command": "",
       "theme": "Large Language Models"
     },
     {
