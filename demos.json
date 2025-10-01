@@ -32,7 +32,16 @@
       "description": "An MCP server to allow a LLM to access the Met Office. Try asking Gemini for the weather in a UK town.",
       "image": "./images/MO_mcp.jpg",
       "launch_type": "script",
-      "command": "cmd.exe /c start powershell.exe -NoExit -Command gemini",
+      "command": "",
+      "theme": "Large Language Models"
+    },
+    {
+      "id": "AI_transcriber",
+      "name": "AI Transcriber",
+      "description": "Transcribes and summarises an audio file using the WhisperX and Llama3.1 models.",
+      "image": "./images/ai_transcriber.png",
+      "launch_type": "script",
+      "command": "wt.exe -- wsl.exe bash -c \"cd /home/sdmeers/Code/ai_transcriber && ./ai_transcriber.sh\"",
       "theme": "Large Language Models"
     },
     {
