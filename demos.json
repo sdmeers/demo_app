@@ -54,6 +54,15 @@
       "theme": "Large Language Models"
     },
     {
+      "id": "ai_wargamer",
+      "name": "AI Wargamer",
+      "description": "A MVP of a set of AI Agents for supporting human decision makers in \"The Wargame\".",
+      "image": "./images/the_ai_wargame_title_image.jpg",
+      "launch_type": "script",
+      "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://wargame-app-371026194474.us-central1.run.app/\"",
+      "theme": "Generative & Agentic AI"
+    },
+    {
       "id": "gemini_cli",
       "name": "Gemini CLI",
       "description": "Launches the Gemini CLI in a new terminal session.",
@@ -231,6 +240,15 @@
       "image": "./images/weather_data.jpg",
       "launch_type": "script",
       "command": "/mnt/c/Program\\ Files/Google/Chrome/Application/chrome.exe --new-window \"https://display-weather-data-728445650450.europe-west2.run.app/\"",
+      "theme": "Data Science"
+    },
+   {
+      "id": "crit_graph",
+      "name": "Critical Role Network Graph",
+      "description": "A LLM powered network graph analysis of episodes of Critical Role.",
+      "image": "./images/crit_role.png",
+      "launch_type": "script",
+      "command": "cd ~/Code/crit_graph && uv run CR_episode_graph.py transcripts/cr_c4e3_graph.json docs/cr_c4e3_graph_seq_new.html --sequence --campaign 4",
       "theme": "Data Science"
     },
     {
